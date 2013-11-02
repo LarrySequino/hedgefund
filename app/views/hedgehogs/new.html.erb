@@ -1,0 +1,12 @@
+<h1>Add Hedgehog</h1>
+
+<%= form_for @hedgehog do |f| %>
+    <%= @hedgehog.errors.full_messages %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <br />
+    <%= f.label :age%>
+    <%= f.number_field :age %>
+    <br />
+    <%= f.submit "Add Hedgehog" %>
+<% end %>

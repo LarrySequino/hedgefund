@@ -1,0 +1,11 @@
+<h1>Hedgehogs!</h1>
+
+<ul>
+    <% @hedgehogs.each do |hedgehog| %>
+        <li>
+        <%= link_to hedgehog.name, "/hedgehogs/#{hedgehog.id}" %>
+        </li>
+    <% end %>
+</ul>
+
+<%= link_to "Add Hedgehog", "/hedgehogs/new" %>
